@@ -3,7 +3,7 @@ public:
     void duplicateZeros(vector<int>& arr) {
         int n=arr.size();
         vector<int> a;
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             a.push_back(arr[i]);
             if(arr[i]==0){
                 a.push_back(0);
@@ -11,7 +11,7 @@ public:
             }
         }
         n=arr.size();
-        for(int i=0;i<n;i++){
+        for(int i=0; i<n; i++){
             arr[i]=a[i];
         }
     }
